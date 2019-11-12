@@ -301,20 +301,15 @@ def player_with_longest_name
 end
 
 def long_name_steals_a_ton?
-  most_steals = 0
-  name = "player"
   game_hash.each do |place, team|
   team.each do |attribute, data|
     if attribute == :players
   data.each do |player, stats|
-    if player[:steals] > most_steals
-      most_steals = player[:steals]
-      
+    
         end
       end
     end
   end
-  return true
 end
 
 
